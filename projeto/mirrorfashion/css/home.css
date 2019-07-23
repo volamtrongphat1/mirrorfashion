@@ -72,10 +72,12 @@ padding: 10px;
     width: 140px;
     margin: 2px;
     padding-bottom: 10px;
+    
 }
 .painel li:hover { /* HOVER É QUANDO COLOCA O MOUSE EM CIMA */
     box-shadow: 0 0 5px #000;
     background-color: rgba(255, 255, 255, 0.8); /* RGBA PARA COR COM OPACICADE // ULTIMO VALOR= OPACIDADE */
+    transform: scale(1.2);
     transition: .7s;
 }
 .painel a{
