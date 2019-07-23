@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flexbox</title>
+    <style>
+    .flex-conteiner {
+        width: 600px;
+        height: 500px;
+        background: silver;
+        display: flex;
+        /* flex start sempre alinha na vertical em cima da linha */
+        /* flex end sempre alinha na vertical em baixo da linha */
+        /* center sempre alinha na vertical no meio da linha */
+        /* align sempre vertical */
+        /* justify sempre horizontal */
+        align-items: flex-start;
+        justify-content: space-between; /* start esquerda end direita */ /* space-between espalha os itens na horizontal */
+        align-content: flex-start;
+        flex-wrap: wrap; /* cria uma nova linha quando não couber mais */
+    }
+    .box {
+        width: 50px;
+        height: auto;
+        background: yellow;
+        margin: 10px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="flex-conteiner">
+        <div class="box">box 1</div>
+        <div class="box">box 2 2 2 2 2</div>
+        <div class="box">box 3 3 3</div>
+    </div>
+    
+</body>
+</html>

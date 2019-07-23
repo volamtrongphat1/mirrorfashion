@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS FLoat/Clear</title>
+    <style>
+        .conteudo {
+            width: 500px;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: rgb(250, 2, 2);
+            margin: 20px auto; /* Centralizar blocos */
+        }
+        .conteudo img {
+            width: 250px;
+            height: auto;
+            float: left;
+            margin-right: 20px;
+        }
+        .conteiner {
+            width: 700px;
+            display: table;
+        }
+        .conteiner.coluna1,
+        .conteiner.coluna2 {
+            width: 50%;
+            float: left;
+        }
+        .conteiner img {
+            width: 100%;
+        }
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur, aliquam error mollitia nam, rerum unde facere quibusdam dolorem ea obcaecati ipsa ratione eos porro dignissimos, autem accusamus quisquam nulla.</p>
+        <p>Iusto, consectetur commodi. Quod dolor magnam repellendus dolorum dignissimos voluptatum repudiandae, iure numquam. Non iusto facere necessitatibus officiis fugit numquam dolore quae. Adipisci quos culpa error odio necessitatibus distinctio nisi.</p>
+        <img src="download.jpeg" alt="Por do sol" />
+        <p>Sequi veritatis dolores ad, a nulla cupiditate. Neque cupiditate qui impedit vitae ut fuga, rem velit, dolor eum sunt doloribus vero laboriosam voluptates odit sit quam eos, dignissimos quo repellat?</p>
+        <p>Deleniti tempora totam facere voluptates minima nulla, quia provident, iure unde eveniet ipsam praesentium eligendi necessitatibus error recusandae molestias id ex ut, laudantium aspernatur? Ad blanditiis sed minus? Dolorem, ratione?</p>
+        <p>Aperiam tempore itaque ex ipsum minus ad, laudantium ratione illo laboriosam voluptate minima a in totam nisi deserunt quo aliquid nobis ab officia. Delectus eum, dolore dignissimos molestiae debitis aut.</p>
+        <p>Fugiat voluptatibus perferendis repellendus nihil, excepturi dolores! Ducimus laudantium dolores vitae quod laborum sunt perferendis neque quidem quos libero itaque necessitatibus, reiciendis culpa, ipsa esse exercitationem velit nemo. Incidunt, inventore.</p>
+        <p>Perspiciatis voluptate autem, in corporis repellat molestias rem dolores ipsam qui placeat ducimus blanditiis magni nesciunt necessitatibus! Exercitationem voluptatibus minus impedit ipsum autem qui quis. Aspernatur, vero quod. Quaerat, a.</p>
+        <p>Fugit perferendis consequatur id suscipit porro aliquid, voluptatem dolor corrupti quo aspernatur neque nobis, recusandae similique iure nulla harum magnam rem delectus illo. Officiis minima recusandae itaque alias, eaque quae?</p>
+        <p>Adipisci totam vitae, sit, laudantium sunt dolores, quam optio illo porro eligendi accusamus amet tenetur quibusdam! A sapiente laboriosam, veniam sunt doloribus magni odio repudiandae quos incidunt deleniti architecto tenetur!</p>
+        <p>Doloremque perferendis sunt qui aut, ex praesentium maiores nisi enim quam. Nesciunt dignissimos qui animi est unde dolor voluptas adipisci. Eligendi adipisci quos voluptate facere, tenetur sequi quisquam ut numquam?</p>
+    </div>
+    <br>
+    <div class="conteudo conteiner">
+        <div class="coluna1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem molestias perspiciatis id tempora maxime officia, voluptatum temporibus quam blanditiis voluptate. Magni tenetur blanditiis dolorum exercitationem esse iure odit quos ratione!</p>
+            <p>Dolorum veritatis voluptatem maxime in ducimus, aliquid nam perferendis. Quas facere eius autem quisquam impedit quo? Cum similique libero officia repellat autem hic expedita optio beatae, at necessitatibus dolore vitae!</p>
+            <p>Suscipit debitis iusto commodi nisi quaerat optio non quam eaque doloribus nobis dolores aliquid, cupiditate repellat quidem provident velit minus maxime. Vel veritatis alias unde est tenetur id reiciendis molestias.</p>
+        </div>
+        <div class="coluna2">
+            <img src="download.jpeg" alt="Por do sol" />
+        </div>
+        <!-- <div class="clearfix"></div> -->
+        <!-- Corrigir float 
+        DISPLAY: TABLE PARA CORRIGIR FLOAT-->
+    </div>
+</body>
+</html>

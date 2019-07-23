@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positions</title>
+    <style>
+    .box {
+        background-color: silver;
+        padding: 10px;
+        width: 300px;
+        margin: 5px;
+        /* !!!position static já é padrão!!! */
+    }
+    .relativo {
+        position: relative;
+        top: 60px;
+        left: 150px;
+        justify-content: 
+    }
+    .absoluto {
+        position: absolute;
+        top: 200px;
+        right: 0;
+    }
+    .fixo {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        background: yellow;
+    }
+    </style>
+</head>
+<body>
+    <div class="box relativo">
+        Posição relativa <!-- Aceita reposicionamento // Sempre relativo à sua posição original -->
+    </div>
+    <div class="box">
+        Posição estática <!-- Posição PADRÃO do elemento no HTML // Não aceita reposicionamento -->
+    </div>
+    <div class="box absoluto">
+        Posição absoluta <!-- Sempre procura um pai (absoluto ou relativo) e se alinha com base nele -->
+    </div>
+    <div class="box fixo">
+        Posição Fixa <!-- Se alinha à janela do navegador // Para fazer menus fixos que não descem com o scroll //-->
+    </div>
+</body>
+</html>

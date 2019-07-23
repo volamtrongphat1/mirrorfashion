@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Elementos</title>
+    <style>
+        .traco-antes::before {
+            content: '\274C ';   
+        }
+        .traco-depois::after {
+            content: ' \274C';
+        }
+        .selecao-especial::selection {
+            background: black;
+            color: black;
+        }
+        .primeira-letra::first-letter {
+            font-weight: bold;
+            font-size: 40px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .primeira-letra::first-line {
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elementos criados pelo CSS que ajudam na estilização de conteúdos -->
+    <!-- // ::afert= // ::before= // ::selection= // ::first-letter= // ::first-line= // -->
+    <!-- after permite inserir conteúdos depois do conteúdo do elemento -->
+    <!-- before permite inserir conteúdos antes do conteúdo do elemento -->
+    <!-- permite estilizar a seleção de um conteúdo -->
+    <!-- first-letter permite formatar a primeira letra de um conteúdo -->
+    <!-- first line permite estilizar a primeira linha de um conteúdo -->
+
+    <p class="traco-antes">Conteúdo com traço no começo</p>
+    <p class="traco-depois">Conteúdo com traço no final</p>
+    <p class="selecao-especial">Conteúdo com seleção especial</p>
+    <p class="primeira-letra primeira linha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsam voluptatibus illum deserunt nam in maxime, earum vero nulla fugiat doloremque facilis, accusantium quos, debitis officia doloribus magnam magni enim.</p>
+</body>
+</html>

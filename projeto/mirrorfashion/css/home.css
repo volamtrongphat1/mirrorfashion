@@ -1,0 +1,98 @@
+.departamentos-busca {
+    width: 230px;
+}
+.busca, 
+.departamentos {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.busca h2,
+.busca form,
+.departamentos h2 {
+padding: 10px;
+}
+.busca h2,
+.departamentos h2 {
+    font-size: 16px;    
+}
+.busca form {
+    padding-top: 0;
+}
+.busca input[type=text] {
+    width: 170px;
+}
+.busca button {
+    background-image: url(../img/busca.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+}
+.departamentos{
+    margin-top: 10px;
+}
+.departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+.departamentos a {
+    color: #333;
+    text-decoration: none;
+}
+.departamentos a:hover {
+    color: #ff6b99;     /* HOVER aplica o estilo informado quando o mouse é posto sobre o elemento */
+}
+
+/* Paineis */
+.paineis {
+    margin-top: 10px;
+}
+.painel {
+    width: 465px;
+    padding: 10px;
+    border-radius: 5px; /* arredondamento de bordas */
+}
+.painel h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 2px #fff; /* primeiro valor= posicionamento horizontal // segundo valor= posicionamento vertical // terceiro valor= blur // quarto valor= cor */
+}
+.painel h2::before {
+    content: '\2756';
+    padding-right: 5px;
+    opacity: 0.4;
+}
+.painel li {
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+}
+.painel li:hover { /* HOVER É QUANDO COLOCA O MOUSE EM CIMA */
+    box-shadow: 0 0 5px #000;
+    background-color: rgba(255, 255, 255, 0.8); /* RGBA PARA COR COM OPACICADE // ULTIMO VALOR= OPACIDADE */
+    transition: .7s;
+}
+.painel a{
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+.painel figcaption {
+    padding: 5px 15px;
+}
+.novidades {
+    /* background-color: #f5dcdc; */
+    background: linear-gradient(#f5dcdc, #bebef4);
+}
+.mais-vendidos {
+    /* background-color: #dcdcf5; */
+    background: linear-gradient(#dcdcf5, #f4bebe)
+}
+

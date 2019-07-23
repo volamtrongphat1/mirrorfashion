@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS estilização de textos</title>
+    <style>
+        .cor-vermelha {
+            color:red;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .ondulado {
+            text-decoration-line: overline underline;
+            text-decoration-style: wavy; 
+        }
+        .fonte-italica {
+            font-style: italic;
+        }
+        .fonte-negrito {
+            font-weight: bold;
+        }
+        .fonte-grande {
+            font-size: 50px;
+        }
+        .fonte-arial {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .fonte-courier {
+            font-family: 'Courier New', Courier, monospace,
+        }
+        .texto-centralizado {
+            text-align: center;
+        }
+        .texto-direita {
+            text-align: right;  
+        }
+    </style>
+</head>
+<body>
+    <h1 class="cor-vermelha ondulado">Título vermelho com decoração ondulada</h1>
+    <p class="underline">Texto comum com underline</p>
+    <p class="fonte-italica">Parágrafo com fonte itálica</p>
+    <p class="fonte-italica fonte-negrito fonte-grande">Parágrafo com fonte itálica, negrito e grande</p>
+    <p class="fonte-arial texto-direita">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nobis qui quam dolorem repellat voluptas perferendis placeat vero, dolor aut eius unde saepe dolorum atque. Quidem repellat explicabo vero quia.</p>
+    <p class="fonte-grande fonte-courier texto-centralizado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint placeat temporibus molestias tenetur, laudantium incidunt iure dicta explicabo nostrum voluptate, dolor expedita est veritatis quod voluptatibus similique nam nobis dolorum.</p>
+</body>
+
+</html>
