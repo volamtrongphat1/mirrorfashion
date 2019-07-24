@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Pseudo Classes</title>
+    <style>
+    p:first-of-type {   /* Pega o primeiro filho levando em consideração seu tipo // Agrupa os elementos do mesmo tipo e verifica a ordem */
+        color: red;
+    }
+    p:last-child {      /* Ultimo elemento */
+        color: blue;
+    }
+    div {
+        border: 1px solid black;
+        padding: 10px;
+        background: #eee
+    }
+    /* 
+    nth-child(4) = posição (pega o quarto elemento)
+    nth-child(even/odd) = par ou impar
+    nth-child(3n) = contador (pega de 3 em 3)
+     */
+    .box p:nth-child(4n-1) {
+        background: orange;
+    }
+    </style>
+</head>
+<body>
+    <span>qualquer coisa</span>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, enim molestias. Et, id nulla ut tempora laboriosam totam expedita consequuntur voluptates recusandae repellat modi voluptatibus praesentium omnis autem consequatur eum!</p>
+    <p>Eveniet dolorum aliquid mollitia voluptatum ea, optio quis assumenda in temporibus facere fugit! Optio corrupti fuga culpa inventore. Harum culpa voluptates doloribus modi ducimus, quibusdam voluptas maiores quis doloremque recusandae!</p>
+    <p>Ea impedit maxime quod minima, eligendi a qui pariatur facere aspernatur excepturi repellat in? Magni, autem natus quisquam esse explicabo neque dignissimos commodi ex sed a, nemo reprehenderit rerum. Voluptate?</p>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis rerum, dolor voluptate dignissimos eum magni quasi veniam ad eius dolore mollitia nesciunt enim cum perferendis exercitationem in. Tempore, dicta laboriosam.</p>
+        <p>Libero sed voluptas cumque delectus non, consequatur ut. Perferendis dolorum possimus necessitatibus qui quis cumque ratione non cum a deserunt aut, culpa laborum atque saepe sequi, obcaecati nam officiis enim!</p>
+        <p>Ratione error cupiditate, velit provident molestias earum libero quas possimus quisquam magni culpa, nemo voluptates nobis iste neque temporibus totam nihil! Cum illum mollitia eum eius eveniet veritatis voluptatem suscipit?</p>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore nam quaerat ex minus, ea dicta excepturi molestias, blanditiis eveniet eos, aliquid nemo. Ullam, inventore? Voluptates dolorem officia beatae nesciunt vero?</p>
+        <p>Recusandae praesentium nemo reiciendis odio alias, in tempore? Asperiores, quis ipsa! Error sit magnam tempore corporis quam corrupti vitae necessitatibus officia, voluptates minus debitis! Cum a odit harum hic doloribus.</p>
+        <p>Eum eaque quibusdam amet nulla, expedita, at harum saepe dolore esse ducimus id error quod dignissimos, tempora eius repellat doloremque excepturi quia omnis aspernatur repellendus inventore molestias odio! Sunt, fuga.</p>
+        <p>Veritatis placeat fugit ab quisquam voluptatibus tenetur voluptatem quia. Magnam ea eveniet praesentium quaerat debitis ratione labore expedita rerum sed, perspiciatis ipsum impedit, quis, dolorem dolorum nobis blanditiis placeat? Repellat?</p>
+        <p>Totam delectus quia cum similique placeat id rem enim inventore nobis, dicta quis eius maiores aspernatur ipsa nulla fuga corrupti nemo, unde quod beatae. Ipsam ratione odio provident odit ipsum.</p>
+        <p>Similique, sequi laudantium debitis omnis cumque rerum earum soluta sed dolor delectus autem nobis dignissimos, eligendi facilis nostrum, facere praesentium iusto nihil consequatur quam dolore! Ipsa veniam repellendus ducimus rem.</p>
+        <p>Quos error nihil aliquam ab natus corrupti tenetur dignissimos maiores, perferendis voluptatem accusamus ad similique odit dolores illo id exercitationem quae quis illum, dolor, facilis autem. Vitae recusandae sequi incidunt?</p>
+        <p>Ipsa iusto dolorem tempore ab sequi quis, et ea magnam nam voluptatem? Numquam repellat eius ipsa eaque. Laborum laboriosam voluptas expedita excepturi! Tempore, ea. Blanditiis facilis doloremque reprehenderit molestiae sed!</p>
+        <p>Fugit eveniet, impedit eligendi ea quidem architecto temporibus aut, itaque molestias esse facere nulla? Incidunt natus hic reprehenderit, consequatur culpa quasi molestiae corporis, explicabo laborum optio voluptas? Ratione, quas perspiciatis.</p>
+        <p>Quasi quis suscipit esse eum necessitatibus quo, natus illum maiores voluptas consequuntur iure? Esse, enim quam. Atque ex aliquid rerum facilis animi placeat ea blanditiis labore, accusamus, hic delectus id!</p>
+    </div>
+</body>
+</html>

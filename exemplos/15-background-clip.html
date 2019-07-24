@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background-clip</title>
+    <style>
+    .fundo {
+        background-image: url(pordosol.jpeg);
+        background-size: cover;
+        width: 300px;
+        height: 400px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: 50px;
+        line-height: 52px;
+        font-weight: 900;
+        -webkit-background-clip: text;         /* PARA FAZER TEXTOS COM FUNDOS DE IMAGEM*/
+        color: transparent;                    /* NECESSÁRIO SEMPRE ESSAS 3 PROPRIEDADES */
+        -webkit-text-fill-color: transparent;  /* // */
+    }
+    </style>
+</head>
+<body>
+    <div class="fundo">
+        Este é um texto com efeito legal.
+    </div>
+</body>
+</html>
