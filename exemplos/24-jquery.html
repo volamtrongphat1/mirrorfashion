@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script>
+
+        // Vanilla JS
+        /* window.onload = function() {
+            // querySelector seleciona sempre o primeiro elemento que ele encontrar
+            // querySelectorAll retorna uma lista de elementos
+            var meuParagrafos = document.querySelectorAll('p');
+            for (var i = 0; i < meuParagrafos.length; i++) {
+                meuParagrafos[i].style.color = 'red';
+            }
+        } */
+
+        //jQuery
+        $(function() {
+            $('p').css('color' , 'red');
+        })
+
+    </script>
+</head>
+<body>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate doloribus dignissimos illo officiis, odio reiciendis debitis repellendus vitae libero veniam esse id a blanditiis voluptas. Incidunt eligendi iste cumque exercitationem.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic aliquam assumenda similique molestias in, dignissimos ipsum eos perspiciatis molestiae magni repellendus deserunt unde magnam impedit totam qui tempora? Sed, autem!</p>
+    <p>Autem, quisquam rem ad, porro assumenda deleniti minima, aliquid possimus sit dolorem nam ullam optio sequi iste voluptates quis? Deserunt non aliquid aspernatur neque molestias unde nemo enim quae. Fuga?</p>
+    <p>Unde suscipit natus, quaerat maxime libero ad optio. Fugit omnis dolore dignissimos delectus nemo dolores id. Quibusdam, eligendi sint similique unde soluta dolorem veniam dolores accusamus illo assumenda totam quisquam!</p>
+    <p>Id omnis quae recusandae commodi ullam suscipit qui neque eaque cum. Ad numquam omnis quibusdam neque cumque ex ipsum ea, voluptatum, sint, eaque pariatur sapiente placeat tempora? Amet, enim aspernatur?</p>
+    <p>Nam, numquam suscipit eum ullam adipisci quam dolore fuga consectetur exercitationem explicabo pariatur ducimus quasi sapiente at? Eum corporis dolorem, accusamus iusto nihil provident eos quaerat qui, ipsum quasi veritatis!</p>
+    <p>Nostrum, officiis mollitia ducimus ipsa quaerat consectetur itaque fuga. Sapiente iusto laboriosam nemo eveniet consequuntur possimus dolorem nostrum magnam hic repellendus, maiores veritatis modi non repellat, ratione provident, harum iure.</p>
+
+</body>
+</html>

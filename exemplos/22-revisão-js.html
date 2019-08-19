@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+        /* variáveis */
+        // nome das variáveis podem ter a-z/A-Z // underline // 0-9 mas não começar com número // $
+        // String = texto (sempre em aspas duplas "" / aspas simples '' ou crase ``)
+        // Crase aceita texto multi linha, aspas simples e duplas não
+        var nome = "Hiago" ; //Variáveld do tipo STRING
+
+        var idade = 20; // Variável do tipo NUMBER => INTEGER
+
+        var salario = 1500.50; //Variável do tipo NUMBER => FLOAT
+
+        var brasileiro = true; //Variável do tipo BOOLEAN
+
+        var especializacoes = ['HTML5', 'CSS3', 'JS']; //Variável do tipo ARRAY
+         // + é para concatenação de textos ou operador matemático
+        
+        document.write(`
+            Nome da pessoa: ${nome} <br>
+            Idade: ${idade} anos <br>
+            Salário: R$ ${salario.toFixed(2).replace(".", ",")} <br>
+            Espacializações: ${especializacoes}
+        `)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

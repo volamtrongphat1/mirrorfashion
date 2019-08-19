@@ -46,3 +46,16 @@
     margin: 0 0 10px 10px;
     
 }
+
+/* Mobile */
+@media (max-width: 630px) {
+    .pagina-sobre,
+    .pagina-sobre #centro-distribuicao,
+    .pagin-sobre #familia-pelho {
+        width: 100%;
+    }
+    .pagina-sobre p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

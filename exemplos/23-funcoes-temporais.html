@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funções Temporais</title>
+    <script>
+        /* function mostraMensagemNaTela() {
+            document.write('Aparecer texto na tela <br>');
+        }
+        setInterval (mostraMensagemNaTela, 1500); */
+        
+        // .length retorna a quantidade de itens numa posição
+        // todo array começa em índice zero
+        // alert(nomes[0]) mostrará o nome de adriana
+        var nomes = ['Adriana' , 'Felipe' , 'Artur' , 'Fabiana'];
+        var indice = 0;
+        function mostraNome() {
+            alert (nomes[indice]);
+            indice = indice + 1;
+            if (indice == nomes.length) {
+                clearInterval(timer);
+            }
+        }
+        var timer = setInterval(mostraNome, 2000);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

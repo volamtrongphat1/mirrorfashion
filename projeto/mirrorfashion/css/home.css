@@ -47,6 +47,16 @@ padding: 10px;
     color: #ff6b99;     /* HOVER aplica o estilo informado quando o mouse é posto sobre o elemento */
 }
 
+.departamentos li ul {
+    margin-top: 5px;
+    display: none;
+}
+.departamentos ul ul li {
+    background-color: #dcdcdc;
+}
+.departamentos li li a::before {
+    content: '- ';
+}
 /* Paineis */
 .paineis {
     margin-top: 10px;
@@ -58,10 +68,11 @@ padding: 10px;
 }
 .painel h2{
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
     text-shadow: 3px 3px 2px #fff; /* primeiro valor= posicionamento horizontal // segundo valor= posicionamento vertical // terceiro valor= blur // quarto valor= cor */
+    font-family: 'Montserrat', sans-serif;
 }
 .painel h2::before {
     content: '\2756';
@@ -79,7 +90,7 @@ padding: 10px;
     background-color: rgba(255, 255, 255, 0.8); /* RGBA PARA COR COM OPACICADE // ULTIMO VALOR= OPACIDADE */
     transform: scale(1.2);
     transition: .5s;
-}
+    }
 .painel a{
     color: #333;
     font-size: 14px;
@@ -98,3 +109,23 @@ padding: 10px;
     background: linear-gradient(#dcdcf5, #f4bebe)
 }
 
+/* Mobile */
+@media (max-width: 630px) {
+    .busca,
+    .departamentos-busca,
+    .departamentos,
+    .painel li img,
+    .banner-destaque img {
+        width: 100%;
+    }
+    .busca,
+    .departamentos {
+        text-align: center;
+    }
+    .novidades {
+        margin-bottom: 20px;
+    }
+    .painel li {
+        width: 30%;
+    }
+}

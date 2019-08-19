@@ -22,3 +22,16 @@
     font-size: 18px;
     font-weight: bold;
 }
+
+/* Mobile */
+@media (max-width: 630px) {
+    .pagina-fidelidade,
+    #cartao-fidelidade img {
+        width: 100%;
+        float: none;
+    }
+    .pagina-fidelidade p {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}

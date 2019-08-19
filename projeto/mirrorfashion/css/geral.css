@@ -1,12 +1,15 @@
-* {
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto&display=swap');
+
+*, ::after, ::before {
     box-sizing: border-box;
 }
+
 
 /* Estilização da página */
 body {
     color: #333;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 /* Centralizador do Layout */
 .conteiner {
@@ -25,6 +28,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
 }
 /* Topo */
 #topo {
@@ -44,6 +48,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 1;
 }
 
 #topo .menu-opcoes {
@@ -87,4 +92,42 @@ body {
 }
 #rodape .social span {
     display: none;
+}
+
+
+/* Mobile */
+@media (max-width: 630px) {
+    .conteiner {
+        width: 96%;
+    }
+    #topo .sacola {
+        position: fixed;
+        text-indent: -9999px;
+        bottom: 5px;
+        right: 5px;
+        width: 60px;
+        height: 60px;
+        background-position: center center;
+        border-radius: 80px;
+        border: 2px solid white;
+        text-align: initial;
+        top: initial;
+        background-color: white;
+        opacity: 0.5;
+    }
+    #topo h1 {
+        text-align: center;
+    }
+    #topo .menu-opcoes {
+        position: static;
+        text-align: center;
+        margin-top: 15px;
+    }
+    #topo .menu-opcoes li {
+        margin: 8px;
+        display: inline-block;
+    }
+    #rodape {
+        padding-bottom: 70px;
+    }
 }
